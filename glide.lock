@@ -1,8 +1,12 @@
-hash: d2386300b5260a7dbacea3f914bbd064427a14564629c9a2506825af5b4287e9
-updated: 2016-12-13T14:40:25.886508128+01:00
+hash: e1f43fdc6e381fd131c8b9d6b231f817cf35976e8157969b2e2756b6ea44fdf4
+updated: 2017-01-04T14:27:21.207920103+01:00
 imports:
 - name: bitbucket.org/tebeka/strftime
-  version: 2194253a23c0
+  version: 2194253a23c090a4d5953b152a3c63fb5da4f5a4
+- name: github.com/alexbrainman/ps
+  version: c8ed4213351302c704de5bd42cdc7b11a6dc7989
+  subpackages:
+  - winapi
 - name: github.com/elastic/gosigar
   version: 2716c1fe855ee5c88eae707195e0688374458c92
 - name: github.com/go-ole/go-ole
@@ -23,8 +27,6 @@ imports:
   version: 24f7833daaff6c3893606bb79d6722a7e9e089c5
 - name: github.com/Sirupsen/logrus
   version: 446d1c146faa8ed3f4218f056fcd165f6bcfda81
-  subpackages:
-  - hooks/syslog
 - name: github.com/StackExchange/wmi
   version: e54cbda6595d7293a7a468ccf9525f6bc8887f99
 - name: github.com/urso/ucfg
@@ -32,14 +34,14 @@ imports:
   subpackages:
   - yaml
 - name: golang.org/x/sys
-  version: 833a04a10549a95dc34458c195cbad61bbb6cb4d
+  version: d75a52659825e75fff6158388dddc6a5b04f9ba5
   subpackages:
+  - unix
   - windows
   - windows/registry
-  - windows/svc/mgr
-  - windows/svc/eventlog
   - windows/svc
-  - unix
+  - windows/svc/eventlog
+  - windows/svc/mgr
 - name: gopkg.in/yaml.v2
   version: a83829b6f1293c91addabc89d0571c246397bbf4
-devImports: []
+testImports: []
